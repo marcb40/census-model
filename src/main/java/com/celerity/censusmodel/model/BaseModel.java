@@ -7,7 +7,16 @@ import javax.persistence.MappedSuperclass;
 @MappedSuperclass
 public abstract class BaseModel {
 	
-	 	@Id
+	 public BaseModel() {
+		super();
+	}
+
+	public BaseModel(Long id) {
+		super();
+		this.id = id;
+	}
+
+		@Id
 	    @Column(name = "ID")
 	    private Long id;
 
@@ -18,6 +27,5 @@ public abstract class BaseModel {
 		public void setId(Long id) {
 			this.id = id;
 		}
-	 	
 	 	
 }

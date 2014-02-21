@@ -16,6 +16,10 @@ public class Rate extends BaseModel{
 	@Column(name = "MAX_AGE", precision = 3, scale = 0)
 	private Integer maxAge;
 	
+	@Column(name = "PRODUCT_ID", precision = 10, scale = 0)
+	private Integer productId;
+	
+	
 	@Column(name = "RATE", precision = 10, scale = 2)
 	private BigDecimal rate;
 	
@@ -31,20 +35,12 @@ public class Rate extends BaseModel{
 		super();
 	}
 
-	public int getMinAge() {
+	public Integer getMinAge() {
 		return minAge;
 	}
 
-	public void setMinAge(int minAge) {
-		this.minAge = minAge;
-	}
-
-	public int getMaxAge() {
+	public Integer getMaxAge() {
 		return maxAge;
-	}
-
-	public void setMaxAge(int maxAge) {
-		this.maxAge = maxAge;
 	}
 
 	public BigDecimal getRate() {
@@ -54,4 +50,22 @@ public class Rate extends BaseModel{
 	public void setRate(BigDecimal rate) {
 		this.rate = rate;
 	}
+
+	public Integer getProductId() {
+		return productId;
+	}
+
+	public void setProductId(Integer productId) {
+		this.productId = productId;
+	}
+
+	public void setMinAge(Integer minAge) {
+		this.minAge = minAge;
+	}
+
+	public void setMaxAge(Integer maxAge) {
+		this.maxAge = maxAge;
+	}
+	
+	
 }

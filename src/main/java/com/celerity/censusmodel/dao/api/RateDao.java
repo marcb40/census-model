@@ -6,5 +6,5 @@ import com.celerity.censusmodel.model.Rate;
 
 public interface RateDao {
 
-	List<Rate> findRates(Long productId);
+	List<Rate> findRatesByProductId(Integer productId);
 }
