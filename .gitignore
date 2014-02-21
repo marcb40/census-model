@@ -1,0 +1,9 @@
+target/
+bin-release/
+release/
+logs/
+.settings/
+.classpath
+.project
+.DS_Store
+/bin
